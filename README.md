@@ -13,3 +13,9 @@ We explore four different factorization methods in linear algebra- the backbone 
 
 ---  
 
+## Iterative Methods: Gauss-Seidel, Conjugate Gradient
+- iterative-methods.ipynb
+
+We explore two principal iterative methods in solving linear algebra problems and use various problem configurations to compare & contrast the two approaches. We begin to see a trade-off in accuracy and performance.
+
+---  
