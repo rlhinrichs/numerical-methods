@@ -23,7 +23,7 @@ We explore two principal iterative methods in solving linear algebra problems an
 ## Finding Eigenvalues: QR, SVD
 - finding-eigenvals.ipynb
 
-We explore the Gram-Shmidt Orthogonalization Process (QR Factorization) and Singular Value Decomposition (SVD) techniques in determining the λs (eigenvalues) of matrices and matrix multiplication. Here we can see _why_ each method works or doesn't, given linear independence.
+We explore the Gram-Shmidt Orthogonalization Process (QR Factorization) and Singular Value Decomposition (SVD) techniques in determining the λs (eigenvalues) of matrices and matrix multiplication. Here we can see how linear independence affects eigenfactorization. This forms the basis for extracting meaningful relationships between the data in a data set.
 
 ---  
 
