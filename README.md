@@ -5,7 +5,7 @@ Dependencies:
 - numpy, scipy (all notebooks)
 - matplotlib (ODE/PDE notebooks)
 
-In the first three notebooks (<b>factorization.ipynb</b>, <b>iterative-methods.ipynb</b>, <b>finding-eigenvals.ipynb</b>), we walk through the historical methods of extracting meaning from data (linear algebra) and observe their cost in computational efficiency.  
+In the first three notebooks (<b>factorization.ipynb</b>, <b>iterative-methods.ipynb</b>, <b>finding-eigenvals.ipynb</b>), we walk through the historical methods of extracting meaning from data (linear algebra) and observe their cost in computational efficiency. 
 In the latter three notebooks, we explore 
 
 ---  
@@ -42,3 +42,19 @@ We explore the Newton-Raphson method for finding roots of an equation. The metho
 
 ---  
 
+## Ordinary Differential Equations: Boundary Value Problems
+- ode-methods.ipynb
+
+We explore the finite difference approximation method to solve various second-order ordinary differential equations (ODEs) whose actual continuous solutions are not computationally observable. However, since these are boundary value problems (BVPs) with parametrization, we can approximate solutions- piggybacking off our Newton-Raphson discovery earlier- which allow us to discretize a more robust approximated series of solutions for a series of data points.
+
+---  
+
+## Partial Differential Equations: elliptic, parabolic, hyperbolic solutions
+- pde-methods.ipynb
+
+We explore real versus approximated solutions to second-order partial differential equations (PDEs). This was definitely the most challenging (& my favorite!) project, particularly for a newbie coder like myself- we had to encode algorithms using only NumPy and SciPy (Matplotlib for visualizations) to implement the Gauss-Seidel, Crank-Nicholson, Crout Factorization methods, and the Finite Central, Forward-Difference & Backward-Difference approximation methods. The wave equation in particular (hyperbolic equation) poses the most volatility in solution-finding.
+
+---  
+---  
+
+This is the journey that led me to my choice of capstone project exploring amplitudinal shifts as they relate to data-extracted features: seeking a purely automated solution to a complex problem that's not easy nor very efficient for our linear computational methods. [Check it out!](https://github.com/rlhinrichs/DeepSleepAI)
