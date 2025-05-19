@@ -5,8 +5,8 @@ Dependencies:
 - numpy, scipy (all notebooks)
 - matplotlib (ODE/PDE notebooks)
 
-In the first three notebooks (<b>factorization.ipynb</b>, <b>iterative-methods.ipynb</b>, <b>finding-eigenvals.ipynb</b>), we walk through the historical methods of extracting meaning from data (linear algebra) and observe their cost in computational efficiency. 
-In the latter three notebooks, we explore 
+In the first three notebooks (<b>factorization.ipynb</b>, <b>iterative-methods.ipynb</b>, <b>finding-eigenvals.ipynb</b>), we walk through the historical methods of extracting meaning from data (linear algebra)- the core algorithms of data science- and observe their cost in computational efficiency as problems become more complex. 
+In the latter three notebooks (<b>finding-roots.ipynb</b>, <b>ode-methods.ipynb</b>, <b>pde-methods.ipynb</b>), we deep-dive into differential equations- the core algorithms in AI- and how to arrive at discrete solutions for complex problems.  
 
 ---  
 ---  
