@@ -19,3 +19,11 @@ We explore four different factorization methods in linear algebra- the backbone 
 We explore two principal iterative methods in solving linear algebra problems and use various problem configurations to compare & contrast the two approaches. We begin to see a trade-off in accuracy and performance.
 
 ---  
+
+## Finding Eigenvalues: QR, SVD
+- finding-eigenvals.ipynb
+
+We explore the Gram-Shmidt Orthogonalization Process (QR Factorization) and Singular Value Decomposition (SVD) techniques in determining the λs (eigenvalues) of matrices and matrix multiplication. Here we can see _why_ each method works or doesn't, given linear independence.
+
+---  
+
