@@ -57,4 +57,4 @@ We explore real versus approximated solutions to second-order partial differenti
 ---  
 ---  
 
-This is the journey that led me to my choice of capstone project exploring amplitudinal shifts as they relate to data-extracted features: seeking a purely automated solution to a complex problem that's not easy nor very efficient for our linear computational methods. [Check it out!](https://github.com/rlhinrichs/DeepSleepAI)
+This is the journey that led me to my choice of capstone project exploring amplitudinal shifts as they relate to data-extracted features: seeking a purely automated solution to a complex problem that's not easy nor very efficient for our linear computational methods. [Wanna see?](https://github.com/rlhinrichs/DeepSleepAI)
