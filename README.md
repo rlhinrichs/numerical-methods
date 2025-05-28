@@ -1,4 +1,4 @@
-numerical-methods
+# numerical-methods
 
 🧮 Numerical Methods in Science & Engineering  
 
