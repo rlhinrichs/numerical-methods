@@ -34,3 +34,7 @@ My most challenging (and favorite!) section. I tackle PDEs using only NumPy and 
 
 **Reflection**: This project became a personal milestone in understanding how computational mathematics models the real world. It also led directly to my capstone project, which explores time-series prediction via neural networks by modeling amplitudinal shifts in data-extracted features.
 👉 [Check it out](https://github.com/rlhinrichs/deepsleepai)
+
+---  
+
+© Rebecca Leigh Hinrichs. All Rights Reserved.
