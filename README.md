@@ -1,60 +1,36 @@
-# numerical-methods
-🧮 Numerical Methods in Science &amp; Engineering
+numerical-methods
 
-Dependencies:
-- numpy, scipy (all notebooks)
-- matplotlib (ODE/PDE notebooks)
+🧮 Numerical Methods in Science & Engineering  
 
-In the first three notebooks (<b>factorization.ipynb</b>, <b>iterative-methods.ipynb</b>, <b>finding-eigenvals.ipynb</b>), we walk through the historical methods of extracting meaning from data (linear algebra)- the core algorithms of data science- and observe their cost in computational efficiency as problems become more complex. 
-In the latter three notebooks (<b>finding-roots.ipynb</b>, <b>ode-methods.ipynb</b>, <b>pde-methods.ipynb</b>), we deep-dive into differential equations- the core algorithms in AI- and how to arrive at discrete solutions for complex problems.  
+Dependencies:  
+- numpy, scipy (all notebooks)  
+- matplotlib (for visualizations in ODE/PDE notebooks)  
 
----  
----  
+This collection of notebooks documents my learning process through foundational topics in numerical computing. The first half—factorization, iterative methods, and eigenvalue extraction—focuses on linear algebra as a cornerstone of modern data science. The second half—root-finding, ODEs, and PDEs—ventures into the differential equations that underlie many models in AI and scientific computing. Along the way, I investigate trade-offs in accuracy, stability, and performance as problem complexity increases.  
 
-## Factorization Methods: PLU, LDL, Cholesky, QR
-- factorization.ipynb
+**Factorization Methods**: PLU, LDL, Cholesky, QR  
+- Notebook: factorization.ipynb  
+A walkthrough of four matrix factorization strategies—each suited to different structural properties of matrices. I explore the trade-offs in computation and discuss how matrix shape and symmetry affect method selection and result stability.  
 
-We explore four different factorization methods in linear algebra- the backbone of data processing- and observe the strengths & weaknesses of the approaches when addressing square vs rectangular matrices, and the significance of the order of operations per approach.
+**Iterative Methods**: Gauss-Seidel, Conjugate Gradient  
+- Notebook: iterative-methods.ipynb  
+Here, I compare two iterative solvers for large linear systems. The exploration shows how different configurations of the system matrix affect convergence, and highlights how iterative methods can trade computational cost for better scalability.  
 
----  
+**Finding Eigenvalues**: QR, SVD  
+- Notebook: finding-eigenvals.ipynb  
+Using QR decomposition and Singular Value Decomposition (SVD), I estimate eigenvalues and gain insight into the role of orthogonality and rank in revealing latent structure in data. This work ties closely to concepts used in machine learning and PCA.  
 
-## Iterative Methods: Gauss-Seidel, Conjugate Gradient
-- iterative-methods.ipynb
+**Finding Roots**: Newton-Raphson  
+- Notebook: finding-roots.ipynb  
+A practical exploration of the Newton-Raphson method, emphasizing its strengths and limitations. I discuss the importance of good initial estimates and the sensitivity of numerical root-finding to local behavior.  
 
-We explore two principal iterative methods in solving linear algebra problems and use various problem configurations to compare & contrast the two approaches. We begin to see a trade-off in accuracy and performance.
+**Ordinary Differential Equations**: Boundary Value Problems  
+- Notebook: ode-methods.ipynb  
+Using finite difference methods, I solve boundary value problems involving second-order ODEs. This section builds on earlier insights into numerical stability and introduces discretization as a bridge between continuous theory and computational implementation.  
 
----  
+**Partial Differential Equations**: Elliptic, Parabolic, Hyperbolic  
+- Notebook: pde-methods.ipynb  
+My most challenging (and favorite!) section. I tackle PDEs using only NumPy and SciPy, implementing algorithms like Gauss-Seidel, Crank-Nicholson, and various finite difference schemes. The wave equation, in particular, was a powerful lesson in volatility and precision when simulating physical phenomena.  
 
-## Finding Eigenvalues: QR, SVD
-- finding-eigenvals.ipynb
-
-We explore the Gram-Shmidt Orthogonalization Process (QR Factorization) and Singular Value Decomposition (SVD) techniques in determining the λs (eigenvalues) of matrices and matrix multiplication. Here we can see how linear independence affects eigenfactorization.  
-
-This forms the basis for extracting meaningful relationships between the data in a data set.
-
----  
----  
-
-## Finding Roots: Newton-Raphson
-- finding-roots.ipynb
-
-We explore the Newton-Raphson method for finding roots of an equation. The method is robust but we have to start iterating near the solution. We're discovering the volatility of numerical solutions, and why discretizing solutions for continuous equations is difficult.
-
----  
-
-## Ordinary Differential Equations: Boundary Value Problems
-- ode-methods.ipynb
-
-We explore the finite difference approximation method to solve various second-order ordinary differential equations (ODEs) whose actual continuous solutions are not computationally observable. However, since these are boundary value problems (BVPs) with parametrization, we can approximate solutions- piggybacking off our Newton-Raphson discovery earlier- which allow us to discretize a more robust approximated series of solutions for a series of data points.
-
----  
-
-## Partial Differential Equations: elliptic, parabolic, hyperbolic solutions
-- pde-methods.ipynb
-
-We explore real versus approximated solutions to second-order partial differential equations (PDEs). This was definitely the most challenging (& my favorite!) project, particularly for a newbie coder like myself- we had to encode algorithms using only NumPy and SciPy (Matplotlib for visualizations) to implement the Gauss-Seidel, Crank-Nicholson, Crout Factorization methods, and the Finite Central, Forward-Difference & Backward-Difference approximation methods. The wave equation in particular (hyperbolic equation) poses the most volatility in solution-finding.
-
----  
----  
-
-This is the journey that led me to my choice of capstone project exploring amplitudinal shifts as they relate to data-extracted features: seeking a purely automated solution to a complex problem that's not easy nor very efficient for our linear computational methods. [Wanna see?](https://github.com/rlhinrichs/DeepSleepAI)
+**Reflection**: This project became a personal milestone in understanding how computational mathematics models the real world. It also led directly to my capstone project, which explores time-series prediction via neural networks by modeling amplitudinal shifts in data-extracted features.
+👉 [Check it out](https://github.com/rlhinrichs/deepsleepai)
